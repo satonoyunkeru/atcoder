@@ -11,6 +11,6 @@ using namespace std;
 int main(){
     string s; cin >> s;
 
-    regex pattern("(dream|dreamer|erase|eraser)*");
+    regex pattern("[(dream)|(dreamer)|(erase)|(eraser)]*");
     cout << (regex_match(s,pattern)?"Yes":"No") << endl;
 }
